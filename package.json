@@ -1,0 +1,27 @@
+{
+  "name": "@local/branch-discussion",
+  "version": "0.1.0",
+  "description": "Soft-branch a sub-question into a seeded child session and bring back only a bounded digest.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "license": "MIT"
+}

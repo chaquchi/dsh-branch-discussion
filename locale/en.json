@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Branch Discussion",
+    "description": "Fork a self-contained sub-question into a seeded child session and return only a bounded digest, keeping the investigation out of the main conversation."
+  }
+}
