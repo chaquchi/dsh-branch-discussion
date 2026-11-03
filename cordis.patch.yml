@@ -1,6 +1,6 @@
 - insert:
     - id: branch-discussion
-      name: '@local/branch-discussion'
+      name: 'dsh-branch-discussion'
       config:
         provider: branch
         timeoutMs: 600000

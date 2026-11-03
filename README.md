@@ -1,4 +1,4 @@
-# @local/branch-discussion
+# dsh-branch-discussion
 
 给 DSH 加一条"软分支"路径：主对话继续跑，把一个**自包含的子问题**开成子会话去讨论，只把一页以内的结构化摘要带回主上下文。子会话里的工具调用、试错、长输出都不进主会话日志。
 
@@ -27,19 +27,15 @@
 
 ## 安装
 
-插件目录放到 `E:\VScode\插件\branch-discussion`（本仓库），然后在 DSH profile 里挂载。
+**从 GitHub 安装**：
 
-1. `C:\Users\biao\.dsh\profiles\desktop\package.json` 的 `dependencies` 增加：
+```sh
+dsh plugin add github:chaquchi/dsh-branch-discussion
+```
 
-   ```json
-   "@local/branch-discussion": "link:E:/VScode/插件/branch-discussion"
-   ```
+桌面端也可以打开 **插件 → 发现 / 插件市场**，搜索 `dsh-branch-discussion` 一键安装（收录社区后可见）。
 
-2. 同一文件 `dsh.profile.bundles` 数组追加 `"@local/branch-discussion"`（顺序即加载顺序，放在 `@deepseek-ai/dsh-base` 之后即可）。
-
-3. 在 profile 目录执行 `pnpm install`（会重建 node_modules 链接）。
-
-4. 重启 DSH。插件列表里应出现"分支讨论"。
+**本地开发安装**：在 profile 的 `package.json` 里加 `"dsh-branch-discussion": "link:<本仓库目录>"`，把 `dsh-branch-discussion` 追加进 `dsh.profile.bundles`（放在 `@deepseek-ai/dsh-base` 之后），在 profile 目录 `pnpm install`，重启 DSH。插件列表里应出现"分支讨论"。
 
 要在 profile 的 `cordis.patch.yml` 里改配置时，按 id 匹配：
 

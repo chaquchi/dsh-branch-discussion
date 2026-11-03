@@ -1,5 +1,5 @@
 {
-  "name": "@local/branch-discussion",
+  "name": "dsh-branch-discussion",
   "version": "0.1.0",
   "description": "Soft-branch a sub-question into a seeded child session and bring back only a bounded digest.",
   "type": "module",
@@ -23,5 +23,14 @@
   "scripts": {
     "test": "node --test test/"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaquchi/dsh-branch-discussion.git"
+  },
+  "homepage": "https://github.com/chaquchi/dsh-branch-discussion",
+  "bugs": {
+    "url": "https://github.com/chaquchi/dsh-branch-discussion/issues"
+  },
+  "author": "biao"
 }

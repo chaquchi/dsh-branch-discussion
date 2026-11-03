@@ -13,7 +13,7 @@
  * This provider cuts before the in-flight assistant output instead, then closes
  * the open tail the same way `@deepseek-ai/dsh-session` does (`buildForkSeed`).
  *
- * @module @local/branch-discussion
+ * @module dsh-branch-discussion
  */
 
 const name = "branch-discussion";
